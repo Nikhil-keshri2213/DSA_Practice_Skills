@@ -1,4 +1,4 @@
-import AdminPanel from './components/AdminPanel'
+import AdminPanel from './pages/Admin/AdminPanel'
 
 function App() {
   return (

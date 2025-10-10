@@ -1,0 +1,193 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Slim Fit Shirt",
+      "slug": "slim-fit-shirt",
+      "brand": "BrandA",
+      "price": 29.99,
+      "category": "Men",
+      "categoryTypeList": ["Shirt", "T-shirt"],
+      "thumbnail": "https://images.pexels.com/photos/15878150/pexels-photo-15878150.jpeg?cs=srgb&dl=pexels-jaswant-shekhawat-15878150.jpg&fm=jpg"
+    },
+    {
+      "id": 2,
+      "name": "Relaxed Fit Jeans",
+      "slug": "relaxed-fit-jeans",
+      "brand": "BrandB",
+      "price": 49.99,
+      "category": "Men",
+      "categoryTypeList": ["Jeans", "Chinos"],
+      "thumbnail": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 3,
+      "name": "Elegant Dress",
+      "slug": "elegant-dress",
+      "brand": "BrandC",
+      "price": 79.99,
+      "category": "Women",
+      "categoryTypeList": ["Dress", "Tunic"],
+      "thumbnail": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 4,
+      "name": "Casual Sneakers",
+      "slug": "casual-sneakers",
+      "brand": "BrandD",
+      "price": 59.99,
+      "category": "Women",
+      "categoryTypeList": ["Shoes", "Sneakers"],
+      "thumbnail": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 5,
+      "name": "Kids' T-shirt",
+      "slug": "kids-tshirt",
+      "brand": "BrandE",
+      "price": 19.99,
+      "category": "Kids",
+      "categoryTypeList": ["T-shirt", "Shirt"],
+      "thumbnail": "https://via.placeholder.com/150"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Men",
+      "categoryTypeList": [
+        {
+          "name": "Shirt",
+          "category": "Men's Apparel",
+          "categoryCode": "SHIRT01"
+        },
+        {
+          "name": "Jeans",
+          "category": "Men's Apparel",
+          "categoryCode": "JEANS01"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Women",
+      "categoryTypeList": [
+        {
+          "name": "Dress",
+          "category": "Women's Apparel",
+          "categoryCode": "DRESS01"
+        },
+        {
+          "name": "Tunic",
+          "category": "Women's Apparel",
+          "categoryCode": "TUNIC01"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Kids",
+      "categoryTypeList": [
+        {
+          "name": "T-shirt",
+          "category": "Kids' Apparel",
+          "categoryCode": "TSHIRT01"
+        },
+        {
+          "name": "Shirt",
+          "category": "Kids' Apparel",
+          "categoryCode": "SHIRT02"
+        }
+      ]
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "amount": 29.99,
+      "discount": 5,
+      "productId": 1,
+      "productName": "Slim Fit Shirt",
+      "orderStatus": "Shipped",
+      "orderDate": "2025-10-01",
+      "expectedDate": "2025-10-05"
+    },
+    {
+      "id": 2,
+      "amount": 49.99,
+      "discount": 10,
+      "productId": 2,
+      "productName": "Relaxed Fit Jeans",
+      "orderStatus": "Delivered",
+      "orderDate": "2025-09-15",
+      "expectedDate": "2025-09-20"
+    },
+    {
+      "id": 3,
+      "amount": 79.99,
+      "discount": 15,
+      "productId": 3,
+      "productName": "Elegant Dress",
+      "orderStatus": "Processing",
+      "orderDate": "2025-10-03",
+      "expectedDate": "2025-10-08"
+    },
+    {
+      "id": 4,
+      "amount": 59.99,
+      "discount": 5,
+      "productId": 4,
+      "productName": "Casual Sneakers",
+      "orderStatus": "Shipped",
+      "orderDate": "2025-10-05",
+      "expectedDate": "2025-10-10"
+    },
+    {
+      "id": 5,
+      "amount": 19.99,
+      "discount": 0,
+      "productId": 5,
+      "productName": "Kids' T-shirt",
+      "orderStatus": "Delivered",
+      "orderDate": "2025-09-28",
+      "expectedDate": "2025-10-02"
+    }
+  ],
+  "payments": [
+    {
+      "id": 1,
+      "amount": 29.99,
+      "mode": "Credit Card",
+      "orderId": 1,
+      "status": "Completed"
+    },
+    {
+      "id": 2,
+      "amount": 49.99,
+      "mode": "PayPal",
+      "orderId": 2,
+      "status": "Completed"
+    },
+    {
+      "id": 3,
+      "amount": 79.99,
+      "mode": "Debit Card",
+      "orderId": 3,
+      "status": "Pending"
+    },
+    {
+      "id": 4,
+      "amount": 59.99,
+      "mode": "Credit Card",
+      "orderId": 4,
+      "status": "Completed"
+    },
+    {
+      "id": 5,
+      "amount": 19.99,
+      "mode": "PayPal",
+      "orderId": 5,
+      "status": "Completed"
+    }
+  ]
+}
