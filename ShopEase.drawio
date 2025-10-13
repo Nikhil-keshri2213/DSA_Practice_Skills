@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0" version="28.2.5">
   <diagram name="Page-1" id="CezI7-oRxNXfgZPD77D8">
-    <mxGraphModel dx="2111" dy="226" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2194" dy="271" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -198,9 +198,9 @@
         <mxCell id="M_7PaKQL23kclCfZ_Kba-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=0;" parent="1" source="M_7PaKQL23kclCfZ_Kba-1" target="M_7PaKQL23kclCfZ_Kba-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="P51QKxOLYLTgCcPM35LA-8" value="JSON" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="M_7PaKQL23kclCfZ_Kba-6">
+        <mxCell id="P51QKxOLYLTgCcPM35LA-8" value="JSON" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=9;" vertex="1" connectable="0" parent="M_7PaKQL23kclCfZ_Kba-6">
           <mxGeometry x="-0.0453" y="1" relative="1" as="geometry">
-            <mxPoint as="offset" />
+            <mxPoint y="1" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="M_7PaKQL23kclCfZ_Kba-1" value="Frontend&lt;br&gt;React JS, TailwindCSS" style="html=1;whiteSpace=wrap;" parent="1" vertex="1">
@@ -209,7 +209,7 @@
         <mxCell id="M_7PaKQL23kclCfZ_Kba-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="M_7PaKQL23kclCfZ_Kba-2" target="M_7PaKQL23kclCfZ_Kba-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="P51QKxOLYLTgCcPM35LA-9" value="SQL" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="M_7PaKQL23kclCfZ_Kba-7">
+        <mxCell id="P51QKxOLYLTgCcPM35LA-9" value="SQL" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=9;" vertex="1" connectable="0" parent="M_7PaKQL23kclCfZ_Kba-7">
           <mxGeometry x="-0.18" y="-2" relative="1" as="geometry">
             <mxPoint x="9" y="-2" as="offset" />
           </mxGeometry>
@@ -217,7 +217,7 @@
         <mxCell id="M_7PaKQL23kclCfZ_Kba-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="M_7PaKQL23kclCfZ_Kba-2" target="M_7PaKQL23kclCfZ_Kba-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="P51QKxOLYLTgCcPM35LA-10" value="Stripe Request" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="M_7PaKQL23kclCfZ_Kba-9">
+        <mxCell id="P51QKxOLYLTgCcPM35LA-10" value="Stripe Request" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=9;" vertex="1" connectable="0" parent="M_7PaKQL23kclCfZ_Kba-9">
           <mxGeometry x="-0.1661" y="1" relative="1" as="geometry">
             <mxPoint x="10" y="1" as="offset" />
           </mxGeometry>
@@ -233,7 +233,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="P51QKxOLYLTgCcPM35LA-11" value="JSON" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="P51QKxOLYLTgCcPM35LA-2">
+        <mxCell id="P51QKxOLYLTgCcPM35LA-11" value="JSON" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=9;" vertex="1" connectable="0" parent="P51QKxOLYLTgCcPM35LA-2">
           <mxGeometry x="-0.2153" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
