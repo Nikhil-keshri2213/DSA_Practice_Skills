@@ -1,0 +1,78 @@
+/* Reset */
+* { box-sizing: border-box; 
+    margin: 0; padding: 0; 
+}
+
+html, body { 
+    height: 100%; 
+    background: #f7f7fb; 
+    font-family: system-ui, sans-serif; }
+
+/* center the container */
+.main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* outer square with multiple square "rings" using box-shadow */
+.child {
+    width: 420px;
+    height: 420px;
+    background: #fff;
+    box-shadow:
+        0 0 0 8px #e6ecff,
+        0 0 0 16px #d3defb,
+        0 0 0 28px #bfcff5,
+        0 0 0 44px #9eb0e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* inner square with its own rings */
+.grandchild {
+    width: 320px;
+    height: 320px;
+    background: #fff;
+    box-shadow:
+        0 0 0 6px #e6ffec,
+        0 0 0 12px #c2ffd6,
+        0 0 0 20px #8affc8,
+        0 0 0 30px #57ffa8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.greatgrand {
+    width: 220px;
+    height: 220px;
+    background: #fff;
+    box-shadow:
+        0 0 0 6px #fff7e6,
+        0 0 0 12px #d0ffc2,
+        0 0 0 20px #a1ff8a,
+        0 0 0 30px #72ff57;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.greatgreat {
+    width: 120px;
+    height: 120px;
+    background: #fff;
+    box-shadow:
+        0 0 0 6px #fff7e6,
+        0 0 0 12px #ffe9c2,
+        0 0 0 20px #ffd28a,
+        0 0 0 30px #ffb957;
+}
+
+/* make it responsive */
+@media (max-width: 520px) {
+    .child { width: 85vw; height: 85vw; }
+    .grandchild { width: 45vw; height: 45vw; }
+}
