@@ -4,7 +4,7 @@ import ProductEdit from './ProductEdit';
 const ProductList = ({ img, name, brand,price, category ,onEdit, onDelete }) => {
 
   return (
-    <div className="flex flex-col md:flex-row bg-white shadow-lg border border-black/50 rounded-lg p-4 space-y-4 md:space-y-0 md:space-x-6">
+    <div className="flex flex-col md:flex-row bg-white shadow-lg border border-black/50 rounded-lg p-4 space-y-4 md:space-y-0 md:space-x-6 cursor-pointer" onClick={onEdit}>
       {/* Image */}
       <img
         src={img}

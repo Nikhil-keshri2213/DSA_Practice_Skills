@@ -41,6 +41,11 @@ const AdminPanel = () => {
             Payments
           </button>
         </div>
+        <div className='mt-10 text-center'>
+          <a href="#" className='text-blue-500' style={{
+            'text-decoration-line': 'underline'
+          }}>Go Back to Shop</a>
+        </div>
       </div>
 
       {/* Main Content Area */}

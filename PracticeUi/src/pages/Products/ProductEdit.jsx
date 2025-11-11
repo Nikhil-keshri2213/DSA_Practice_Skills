@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import slugify from 'slugify';
 
 const ProductEdit = ({ product, onSave, onCancel }) => {
   const [formData, setFormData] = useState({
@@ -11,6 +12,13 @@ const ProductEdit = ({ product, onSave, onCancel }) => {
     thumbnail: ''
   });
 
+  // Auto-update slug when name changes
+  useEffect(() => {
+    const generatedSlug = slugify(formData.name, { lower: true, strict: true });
+    setFormData(prev => ({ ...prev, slug: generatedSlug }));
+  }, [formData.name]);
+
+  // Set initial product data
   useEffect(() => {
     if (product) {
       setFormData({ ...product });
@@ -29,13 +37,24 @@ const ProductEdit = ({ product, onSave, onCancel }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Call parent callback or dispatch update logic
     onSave(formData);
   };
 
   return (
     <div className="max-w-2xl mx-auto bg-white shadow-md rounded-md p-6 border border-black/50">
-      <h2 className="text-2xl font-semibold mb-4 text-gray-800">Edit Product</h2>
+      {/* Header */}
+      <div className="flex justify-between items-center mb-4">
+        <h2 className="text-2xl font-semibold text-gray-800">Edit Product</h2>
+        <button
+          type="button"
+          onClick={onCancel}
+          className="px-4 py-2 bg-red-300 hover:bg-red-400 rounded-md"
+        >
+          Close
+        </button>
+      </div>
+
+      {/* Form */}
       <form onSubmit={handleSubmit} className="space-y-4">
         {/* Name */}
         <div>
@@ -50,16 +69,15 @@ const ProductEdit = ({ product, onSave, onCancel }) => {
           />
         </div>
 
-        {/* Slug */}
+        {/* Slug (Read-Only) */}
         <div>
           <label className="block text-sm font-medium text-gray-700">Slug</label>
           <input
             type="text"
             name="slug"
             value={formData.slug}
-            onChange={handleChange}
-            className="mt-1 w-full p-2 border rounded-md"
-            required
+            readOnly
+            className="mt-1 w-full p-2 border rounded-md bg-gray-100 text-green-700 font-mono"
           />
         </div>
 
@@ -95,8 +113,7 @@ const ProductEdit = ({ product, onSave, onCancel }) => {
             name="category"
             value={formData.category}
             onChange={handleChange}
-            className="mt-1 w-full p-2 border rounded-md"
-          >
+            className="mt-1 w-full p-2 border rounded-md">
             <option value="">Select Category</option>
             <option value="Men">Men</option>
             <option value="Women">Women</option>
@@ -138,7 +155,7 @@ const ProductEdit = ({ product, onSave, onCancel }) => {
         </div>
 
         {/* Actions */}
-        <div className="flex justify-end space-x-4">
+        <div className="flex justify-end space-x-4 pt-4">
           <button
             type="button"
             onClick={onCancel}

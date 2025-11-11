@@ -3,6 +3,7 @@ import ProductList from './ProductList';
 import ProductCreate from './ProductCreate';
 import ProductEdit from './ProductEdit';
 import data from '../../data/data.json';
+import SearchBar from '../../components/SearchBar';
 
 const ProductPanel = () => {
   const [products, setProducts] = useState(data.products); // Load from JSON
@@ -38,6 +39,7 @@ const ProductPanel = () => {
       {!isCreating && !editingProduct && (
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-2xl font-bold text-gray-800">Products</h2>
+          <SearchBar/>
           <button
             onClick={() => setIsCreating(true)}
             className="px-4 py-1 text-green-500 font-semibold border rounded-md hover:bg-green-500 hover:text-white transition">

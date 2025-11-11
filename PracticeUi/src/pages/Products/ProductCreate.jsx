@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import slugify from 'slugify';
 
 const ProductCreate = ({ onCreate, onCancel }) => {
   const [formData, setFormData] = useState({
@@ -11,9 +12,15 @@ const ProductCreate = ({ onCreate, onCancel }) => {
     thumbnail: ''
   });
 
+  // 🔄 Auto-generate slug when name changes
+  useEffect(() => {
+    const generatedSlug = slugify(formData.name, { lower: true, strict: true });
+    setFormData(prev => ({ ...prev, slug: generatedSlug }));
+  }, [formData.name]);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value}));
+    setFormData(prev => ({ ...prev, [name]: value }));
   };
 
   const handleCategoryTypesChange = (e) => {
@@ -26,17 +33,28 @@ const ProductCreate = ({ onCreate, onCancel }) => {
 
     const newProduct = {
       ...formData,
-      id: Date.now(), // You can change this to a UUID or handled by backend
+      id: Date.now(),
       price: parseFloat(formData.price),
     };
 
     onCreate(newProduct);
   };
 
-
   return (
     <div className="max-w-2xl mx-auto bg-white border border-black/50 shadow-md rounded-md p-6">
-      <h2 className="text-2xl font-semibold mb-4 text-gray-800">Create New Product</h2>
+      {/* Header with title and close button */}
+      <div className="flex justify-between items-center mb-4">
+        <h2 className="text-2xl font-semibold text-gray-800">Create New Product</h2>
+        <button
+          type="button"
+          onClick={onCancel}
+          className="px-4 py-2 bg-red-300 hover:bg-red-400 rounded-md"
+        >
+          Close
+        </button>
+      </div>
+
+      {/* Form */}
       <form onSubmit={handleSubmit} className="space-y-4">
         {/* Name */}
         <div>
@@ -51,16 +69,15 @@ const ProductCreate = ({ onCreate, onCancel }) => {
           />
         </div>
 
-        {/* Slug */}
+        {/* Slug (Read-Only) */}
         <div>
           <label className="block text-sm font-medium text-gray-700">Slug</label>
           <input
             type="text"
             name="slug"
             value={formData.slug}
-            onChange={handleChange}
-            className="mt-1 w-full p-2 border rounded-md"
-            required
+            readOnly
+            className="mt-1 w-full p-2 border rounded-md bg-gray-100 text-green-700 font-mono"
           />
         </div>
 
