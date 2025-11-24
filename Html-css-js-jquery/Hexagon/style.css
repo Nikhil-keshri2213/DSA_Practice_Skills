@@ -1,0 +1,49 @@
+:root {
+  --side-length: 150px;
+  --hex-size: calc(var(--side-length) * 2.5);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  height: 100%;
+  background: #fff;
+  font-family: system-ui, sans-serif;
+}
+
+.hexagon {
+  position: relative;
+  width: var(--hex-size);
+  height: var(--hex-size);
+  margin: 100px auto;
+  border: 1px dashed black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.side {
+  position: absolute;
+  width: var(--side-length);
+  height: 2px;
+  background: blue;
+  top: 80%;
+  left: 50%;
+
+  /* ★ FIXED */
+  transform-origin: 50% calc(-0.85 * var(--side-length));
+  animation: rotate 1s linear;
+}
+
+
+@keyframes rotate {
+  from { transform-origin: 0% calc(-0.85 * var(--side-length)); }
+  to {  transform-origin: 50% calc(-0.85 * var(--side-length)); }
+}
+/* 6 rotations */
+.side:nth-child(1) { transform: translate(-50%, -50%) rotate(0deg);}
+.side:nth-child(2) { transform: translate(-50%, -50%) rotate(60deg); }
+.side:nth-child(3) { transform: translate(-50%, -50%) rotate(120deg); }
+.side:nth-child(4) { transform: translate(-50%, -50%) rotate(180deg); }
+.side:nth-child(5) { transform: translate(-50%, -50%) rotate(240deg); }
+.side:nth-child(6) { transform: translate(-50%, -50%) rotate(300deg); }
