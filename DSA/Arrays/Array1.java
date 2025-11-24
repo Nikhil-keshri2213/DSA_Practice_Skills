@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class Array1{
     public static void main(String[] args) {
         Array1 arrayExample = new Array1();
-        arrayExample.isSorted();
+        arrayExample.removeDuplicates();
     }
 
     public void basics(){
@@ -73,5 +73,24 @@ public class Array1{
             if(arr[i] < arr[i++]) res = true;
         }
         System.err.println("Array is Sorted ? : "+ res);
+    }
+
+    public void removeDuplicates(){
+        int arr[] = {1,2,2,2,2,4,4,4,6,6,7};
+        int n = arr.length;
+        if (n <= 1)
+            return;
+
+        int idx = 1;
+        for(int i=1; i<arr.length; i++){
+            if(arr[i] != arr[i-1]){
+                arr[idx++] = arr[i];
+            }
+        }
+
+        System.err.println("New Fresh Array:");
+        for (int i=0; i<idx; i++) {
+            System.err.print(arr[i]+ ",");
+        }
     }
 }
