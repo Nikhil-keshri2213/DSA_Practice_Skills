@@ -3,3 +3,6 @@ Animation libs
 https://labs.lusion.co/
 https://reactbits.dev/backgrounds/beams
 https://ui.aceternity.com/components/grid-and-dot-backgrounds
+
+Flask
+https://flask.palletsprojects.com/en/stable/quickstart/

@@ -1,7 +1,6 @@
-import { cn } from "@/lib/utils";
-import React from "react";
+import { cn } from "../lib/utils";
 
-export function GridBackgroundDemo() {
+function GridBackgroundDemo() {
   return (
     <div
       className="relative flex h-[50rem] w-full items-center justify-center bg-white dark:bg-black">
@@ -22,3 +21,5 @@ export function GridBackgroundDemo() {
     </div>
   );
 }
+
+export default GridBackgroundDemo;
