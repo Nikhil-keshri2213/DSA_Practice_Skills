@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;  /* Dark background */
+  color: #fff;  /* White text for contrast */
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);  /* 20 equal columns */
+  grid-template-rows: repeat(10, 1fr);  /* 10 equal rows */
+  width: 160vmin;  /* Width of grid */
+  height: 80vmin;  /* Height of grid */
+  border: 1px solid rgba(0, 255, 0, 0.3);  /* Neon grid border */
+  background-color: #1a1a1a;  /* Slightly lighter background color */
+  position: relative;  /* To ensure circle is positioned relative to the grid */
+}
+
+.grid-item {
+  background-color: #000;  /* Default black background for items */
+  border: 1px solid rgba(0, 255, 0, 0.3);  /* Neon green border */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.grid-item:hover {
+  background-color: rgb(0, 255, 0);  /* Neon hover effect */
+}
+
+/* Circle with Neon Glow */
+.circle {
+  position: absolute;
+  top: 50%; /* Center the circle vertically */
+  left: 50%; /* Center the circle horizontally */
+  transform: translate(-50%, -50%); /* Offset the center to match */
+  width: 200px; /* Reduce the circle size */
+  height: 200px; /* Reduce the circle size */
+  border-radius: 50%; /* Make it a circle */
+  background-color: rgba(0, 255, 0, 0.4); /* Slightly transparent neon green */
+  border: 3px dashed rgba(0, 255, 0, 0.7); /* Neon dashed border */
+  box-shadow: 
+    0 0 0 10px rgba(0, 255, 0, 0.3), /* Neon glow */
+    0 0 0 20px rgba(0, 255, 0, 0.2), /* Neon glow */
+    0 0 0 30px rgba(0, 255, 0, 0.1), /* Neon glow */
+    0 0 0 40px rgba(0, 255, 0, 0.05); /* Neon glow */
+}
