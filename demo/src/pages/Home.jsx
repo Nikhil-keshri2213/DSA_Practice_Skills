@@ -1,5 +1,5 @@
 import React from 'react'
-import Beams from './Beams';
+import Beams from '../background/Beams';
 import HeaderBanner from '../components/HeaderBanner';
 const Home = () => {
     return (
@@ -13,7 +13,7 @@ const Home = () => {
                     speed={2}
                     noiseIntensity={1.75}
                     scale={0.2}
-                    rotation={45}
+                    rotation={30}
                 />
             </div>
             <HeaderBanner />

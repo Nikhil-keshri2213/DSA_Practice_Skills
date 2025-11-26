@@ -1,12 +1,11 @@
 import React from 'react'
-import Home from './background/Home'
+import Home from './pages/Home'
 import HeaderBanner from './components/HeaderBanner'
 
 const App = () => {
   return (
     <div>
-      <Home />
-      {/* <HeaderBanner /> */}
+      {/* <Home /> */}
     </div>
   )
 }
