@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 
 const SelfHome = () => {
 
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <div className="w-full flex flex-col md:flex-row items-center justify-between px-10 py-20 gap-10">
       <div className="w-full md:w-1/2 flex justify-center">
@@ -23,7 +23,7 @@ const SelfHome = () => {
                  <div className='text-lg font-semibold p-3 text-white'>A Unified Digital Ecosystem for Photography Services</div>
             </CardItem>
 
-            <CardItem translateZ={120}>
+            <CardItem translateZ={100}>
               <img
                 src={WhiteBG}
                 alt="WhiteBG"
@@ -35,7 +35,7 @@ const SelfHome = () => {
               <img
                 src={BlackBG}
                 alt="BlackBG"
-                className="w-fit h-[71px] object-cover rounded-xl shadow-lg mt-2 ml-2 border border-white/20"
+                className="w-fit h-14 object-cover rounded-xl shadow-lg mt-2 ml-2 border border-white/20"
               />
             </CardItem>
 
@@ -50,7 +50,7 @@ const SelfHome = () => {
       </div>
 
       <div className="w-full md:w-1/2 text-white text-lg leading-relaxed">
-        <p>
+        <p className='border border-white/20'>
           Every great story begins with a single frame. <br /><br />
           HighLens helps you capture it with clarity, confidence, and creativity.
           Find the right artist, the right gear, and the right guidance — all in one place.

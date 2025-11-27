@@ -5,9 +5,9 @@ import SelfHome from '../components/HomeSection/SelfHome';
 
 const Home = () => {
   return (
-    <div className="relative w-full h-screen overflow-y-auto">
+    <div className="relative w-full h-screen overflow-y-auto bg-black">
 
-      {/* FIXED BACKGROUND */}
+      {/* FIXED BACKGROUND
       <div className="fixed inset-0 -z-10">
         <Beams
           beamWidth={2}
@@ -19,7 +19,7 @@ const Home = () => {
           scale={0.2}
           rotation={30}
         />
-      </div>
+      </div> */}
 
       {/* SCROLLING CONTENT */}
       <div className="relative z-10 flex flex-col">
