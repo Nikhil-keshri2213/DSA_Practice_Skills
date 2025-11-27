@@ -45,14 +45,14 @@ const HeaderBanner = () => {
 
           {/* Glow on hover (+ scale) */}
           <button className="text-[20px] w-[180px] h-[45px] bg-white rounded-full font-semibold 
-          transition-all duration-300 hover:scale-105 hover:font-bold 
+          transition-all duration-300 hover:scale-105
           hover:shadow-[0_0_25px_rgba(255,255,255,1)]">
             Get Started
           </button>
 
           <button className="text-[20px] w-[180px] h-[45px] border border-white/30 rounded-full 
           text-white/60 bg-white/10 backdrop-blur-md font-semibold 
-          transition-all duration-300 hover:scale-105 hover:font-bold 
+          transition-all duration-300 hover:scale-105
           hover:shadow-[0_0_25px_rgba(255,255,255,1)]">
             Learn More
           </button>
