@@ -27,7 +27,7 @@ const SelfHome = () => {
               <img
                 src={WhiteBG}
                 alt="WhiteBG"
-                className="w-fit h-20 object-cover rounded-xl ml-2 shadow-lg border border-white/50"
+                className="w-fit h-16 object-cover rounded-xl ml-2 shadow-lg border border-white/50"
               />
             </CardItem>
 
@@ -40,7 +40,7 @@ const SelfHome = () => {
             </CardItem>
 
             <CardItem translateZ={60}>
-              <button className="px-4 py-6 bg-white text-black rounded-full mt-2 mb-2 ml-60 font-bold cursor-pointer" onClick={navigate("/")}>
+              <button className="px-4 py-2 bg-white text-black rounded-full mt-2 mb-2 ml-60 font-bold cursor-pointer" onClick={navigate("/")}>
                 Explore Now
               </button>
             </CardItem>
