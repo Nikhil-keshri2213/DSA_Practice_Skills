@@ -1,5 +1,5 @@
 import React from 'react'
-import { CardContainer, CardBody, CardItem } from "../../components/ui/3d-card";
+import { CardContainer, CardBody, CardItem } from "../ui/3d-card";
 
 // FIXED — IMPORT IMAGES PROPERLY
 import WhiteBG from "../../assets/white.png";
