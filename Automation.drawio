@@ -17,7 +17,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="QeRwW8yQyogPiUNv5nnX-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="CSV" vertex="1">
-          <mxGeometry height="60" width="120" x="-39" y="185" as="geometry" />
+          <mxGeometry height="60" width="120" x="-117" y="185" as="geometry" />
         </mxCell>
         <mxCell id="QeRwW8yQyogPiUNv5nnX-21" edge="1" parent="1" source="QeRwW8yQyogPiUNv5nnX-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="QeRwW8yQyogPiUNv5nnX-17">
           <mxGeometry relative="1" as="geometry" />
@@ -63,13 +63,8 @@
         <mxCell id="QeRwW8yQyogPiUNv5nnX-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="If input format comes other then pdf&amp;nbsp;" vertex="1">
           <mxGeometry height="30" width="130" x="-445" y="40" as="geometry" />
         </mxCell>
-        <mxCell id="QeRwW8yQyogPiUNv5nnX-38" edge="1" parent="1" source="QeRwW8yQyogPiUNv5nnX-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="-80" y="215" />
-            </Array>
-            <mxPoint x="-40" y="214.5" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="UyUjE6rxN75OtO65jVtD-1" edge="1" parent="1" source="QeRwW8yQyogPiUNv5nnX-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="QeRwW8yQyogPiUNv5nnX-2">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="QeRwW8yQyogPiUNv5nnX-28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="PDF Converter" vertex="1">
           <mxGeometry height="45" width="120" x="-440" y="192.5" as="geometry" />
@@ -90,7 +85,7 @@
           <mxGeometry height="100" width="300" x="-1070" y="410" as="geometry" />
         </mxCell>
         <mxCell id="OXR261jyE97fmX0gT2Xf-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="HTML Converter from PDF or Given Input" vertex="1">
-          <mxGeometry height="30" width="119" x="-39" y="250" as="geometry" />
+          <mxGeometry height="30" width="119" x="-117" y="250" as="geometry" />
         </mxCell>
         <mxCell id="OXR261jyE97fmX0gT2Xf-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Platform where content upload and push to production" vertex="1">
           <mxGeometry height="30" width="140" x="150" y="260" as="geometry" />
