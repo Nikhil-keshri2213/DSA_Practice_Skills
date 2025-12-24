@@ -34,10 +34,7 @@
           <mxGeometry height="60" width="120" x="160" y="185" as="geometry" />
         </mxCell>
         <mxCell id="QeRwW8yQyogPiUNv5nnX-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;Static&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;Pdf&lt;div&gt;Ppt&lt;/div&gt;&lt;div&gt;Image&lt;/div&gt;" vertex="1">
-          <mxGeometry height="100" width="60" x="-870" y="120" as="geometry" />
-        </mxCell>
-        <mxCell id="QeRwW8yQyogPiUNv5nnX-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;Interactive&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;Pdf&lt;div&gt;Ppt&lt;/div&gt;&lt;div&gt;Image&lt;/div&gt;" vertex="1">
-          <mxGeometry height="100" width="70" x="-800" y="120" as="geometry" />
+          <mxGeometry height="100" width="130" x="-870" y="120" as="geometry" />
         </mxCell>
         <mxCell id="QeRwW8yQyogPiUNv5nnX-37" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
           <mxGeometry height="190" width="160" x="-460" y="75" as="geometry" />
