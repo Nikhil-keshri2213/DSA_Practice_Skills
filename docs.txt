@@ -6,3 +6,67 @@ https://ui.aceternity.com/components/grid-and-dot-backgrounds
 
 Flask
 https://flask.palletsprojects.com/en/stable/quickstart/
+
+
+Input 1: RGB image
+Input 2: ELA image
+Input 3: Noise residual
+Input 4: FFT magnitude
+        ↓
+   Separate CNN branches
+        ↓
+   Feature concatenation
+        ↓
+   Fully connected layers
+        ↓
+   Forged / Authentic
+
+
+Step-by-step fix (practical pipeline)
+Stream -	What it captures
+1. RGB	- Semantic inconsistencies
+2. ELA	- Compression anomalies
+3. Noise residual	- Sensor noise mismatch
+4. Frequency (DCT / FFT)	Editing artifacts
+5. Edge maps	Boundary inconsistencies
+
+Noise residual (VERY important)
+Mobile cameras leave a sensor fingerprint (PRNU).
+Forgery breaks it.
+Use:
+
+noise = image - denoised(image)
+
+CNNs love this signal.
+
+
+
+Data is more important than model
+Biggest fix: data augmentation for real-world abuse
+
+You must simulate what mobile & web do.
+
+Mandatory augmentations:
+
+1. Random JPEG recompression (quality 40–100)
+2. Resize → recompress
+3. Gaussian & Poisson noise
+4. Motion blur
+5. Screenshot simulation
+6. Color profile removal
+7. WhatsApp-like recompression
+
+original → resize → JPEG(70) → JPEG(90) → train
+
+
+Train across datasets (non-negotiable)
+Never train on a single dataset.
+Use:
+
+1. CASIA
+2. Columbia
+3. COVERAGE
+4. In-the-wild deepfake datasets
+5. Your own mobile-captured images
+
+Even mixing a small number helps massively.
